@@ -1,0 +1,42 @@
+import java.io.*;
+
+class construct {
+
+    // constructor with one argument
+    construct(String name)
+    {
+        System.out.println("Constructor with one "
+                           + "argument - String : " + name);
+    }
+ 
+    // constructor with two arguments
+    construct(String name, int age)
+    {
+ 
+        System.out.println(
+            "Constructor with two arguments : "
+            + " String and Integer : " + name + " " + age);
+    }
+ 
+    // Constructor with one argument but with different type than the previous
+    construct(long id){
+        System.out.println(
+            "Constructor with one argument : "
+            + "Long : " + id);
+    }
+}
+ 
+public class constructor{
+    public static void main(String[] args)
+    {
+        // Invoke the constructor with one argument
+        construct geek2 = new construct("Shikhar");
+ 
+        // Invoke the constructor with two arguments
+        construct geek3 = new construct("Dharmesh", 26);
+ 
+        // Invoke the constructor with one argument of
+        // type 'Long'.
+        construct geek4 = new construct(325614567);
+    }
+}
