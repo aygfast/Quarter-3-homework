@@ -1,0 +1,46 @@
+/**
+ * Write a description of class Polymorphism here.
+ //Polymorphism code is used to classify many objects of many similiarties. The individual classes come together in one group which is identifited by Polymorphism.
+ *
+ * @Andre Galowicz (your name)
+ * @version (1/20/23)
+ * Definition of Polymophism in java - many forms
+ * Why: Preserve code, and reuse code.
+ * 
+ * Assignment: Add two more classes that extend to polymorphism class, and subsequently create two more objects.
+ */
+class Polymorphism{
+    public void mammal(){
+        System.out.println("The mammals have Mammarian glands");
+    }
+}
+class Dog extends Polymorphism{ // The extends keyword, is used to extend the class to the original class
+    public void mammal(){
+        System.out.println("Is a mammal");
+    }
+}
+class Snail extends Polymorphism{
+    public void mammal(){
+        System.out.println("Not a mammal");
+    }
+}
+class Horse extends Polymorphism{
+  public void mammal(){
+        System.out.println("Is a mammal");
+Class Crab extends Polymorphism{
+  public void mamma(){
+        System.out.println("Is not a mammal");
+
+public class MainSpecies{
+    public static void main(String[] args){
+        Polymorphism myPolymorphism = new Polymorphism(); // Creates a polymorphism object
+        Polymorphism myDog = new Dog();                   // Creates a Dog object
+        Polymorphism mySnail = new Snail();
+        Polymorphism myHorse = new Horse();
+        Polymorphism myCrab = new Crab();
+        // Creates a Snail object
+        myPolymorphism.mammal();
+        myDog.mammal();
+        mySnail.mammal();
+    }
+}
